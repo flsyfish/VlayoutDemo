@@ -8,7 +8,8 @@ Vlayout测试的demo
 ((ImageView)holder.itemView.findViewById(R.id.imgs)).setTag(R.id.imgs,itemData.get(position).getImageUrl());
   ```
  ```bash
- if((itemData.get(position).getImageUrl()).equals(((ImageView) holder.itemView.findViewById(R.id.imgs)).getTag(R.id.imgs).toString())) {
+ if((itemData.get(position).getImageUrl()).equals
+ (((ImageView) holder.itemView.findViewById(R.id.imgs)).getTag(R.id.imgs).toString())) {
             Glide.with(mContext).load(itemData.get(position).ge  tImageUrl())
                 .skipMemoryCache(true)
                     .placeholder(R.drawable.no_banner)//重点  占位符

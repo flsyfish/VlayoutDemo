@@ -10,12 +10,12 @@ Vlayout测试的demo
  ```bash
  if((itemData.get(position).getImageUrl()).equals
  (((ImageView) holder.itemView.findViewById(R.id.imgs)).getTag(R.id.imgs).toString())) {
-            Glide.with(mContext).load(itemData.get(position).ge  tImageUrl())
+            Glide.with(mContext).load(itemData.get(position).getImageUrl())
                 .skipMemoryCache(true)
                     .placeholder(R.drawable.no_banner)//重点  占位符
                     .error(R.drawable.no_banner)
-                    .diskCacheStrategy( DiskCacheStrategy.ALL )
-                    .into((ImageView)             holder.itemView.findViewById(R.id.imgs));
+                    .diskCacheStrategy( DiskCacheStrategy.ALL)
+                    .into((ImageView)holder.itemView.findViewById(R.id.imgs));
         }
  ```
 

@@ -45,6 +45,3 @@ Vlayout测试的demo
         });
 ```
 
-##### 效果图
-
-![3.png](C:/Users/Administrator/Desktop/3.png "")
